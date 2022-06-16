@@ -40,7 +40,7 @@ function getTimeOfDay(){
 function validatePassword(){
     var password = document.getElementById("passwordTxt");
     if(password.value == "Welcome1"){
-        location.assign("https://www.youtube.com/watch?v=iik25wqIuFo");
+        location.assign("rickroll.html");
     }
     else{
         alert("Incorrect");
