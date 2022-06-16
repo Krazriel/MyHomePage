@@ -52,3 +52,5 @@ document.addEventListener("keyup", function(event) {
         validatePassword();
     }
 });
+
+
