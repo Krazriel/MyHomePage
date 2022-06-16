@@ -1,0 +1,90 @@
+body{
+    background-image: url("../image/login-background.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: Arial;
+    overflow-y: hidden;
+    
+}
+
+.container{
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.userName{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.userProfile{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.passwordText{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    opacity: 0.7;
+    border-style: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.passwordText::placeholder{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input[type="password"]:not(:placeholder-shown){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.passwordField{
+    display: flex;
+    align-items: center;
+}
+
+.enterPwd{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: -33px;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.pwdHint{
+    color: gray;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.timeInfo{
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.dayInfo{
+    margin-right: 10px;
+}
