@@ -40,7 +40,7 @@ function getTimeOfDay(){
 function validatePassword(){
     var password = document.getElementById("passwordTxt");
     if(password.value == "Welcome1"){
-        location.assign("rickroll.html");
+        alert("Correct");
     }
     else{
         alert("Incorrect");
