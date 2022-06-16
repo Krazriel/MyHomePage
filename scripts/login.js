@@ -38,7 +38,7 @@ function getTimeOfDay(){
 }
 
 function validatePassword(){
-    var password = document.getElementById("passwordTxt");
+    var password = document.getElementById("passwordText");
     if(password.value == "Welcome1"){
         alert("Correct");
     }
@@ -47,10 +47,17 @@ function validatePassword(){
     }
 }
 
-document.addEventListener("keyup", function(event) {
+function enterPressed(event){
     if (event.key === 'Enter') {
         validatePassword();
     }
-});
+}
+
+window.onload=function(){
+    const pwdButton = document.getElementById("enterPwd");
+    const pwdText = document.getElementById("passwordText");
+    pwdButton.addEventListener("click", validatePassword);
+    pwdText.addEventListener("keyup", enterPressed);
+}
 
 
