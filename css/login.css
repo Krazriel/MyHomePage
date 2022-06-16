@@ -3,8 +3,8 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     font-family: Arial;
-    overflow-y: hidden;
-    
+    overflow-y: hidden; 
+    background-color: black;
 }
 
 .container{
