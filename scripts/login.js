@@ -37,7 +37,7 @@ function getTimeOfDay(){
 function validatePassword(){
     const password = document.getElementById("passwordText");
     if(password.value == "Welcome1"){
-        alert("Correct");
+        window.location.assign('homepage.html');
     }
     else{
         alert("Incorrect");
