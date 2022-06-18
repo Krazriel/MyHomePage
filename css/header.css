@@ -1,0 +1,44 @@
+body{
+    background-image: url("../image/login-background.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: Arial;
+    overflow-y: hidden; 
+    background-color: black;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userProfile{
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.userPic{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.webNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+

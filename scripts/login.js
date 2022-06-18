@@ -1,23 +1,23 @@
-var updateDay = setTimeout(getDayOfWeek, 500);
-var updateTime = setTimeout(getTimeOfDay, 500);
+let updateDay = setTimeout(getDayOfWeek, 500);
+let updateTime = setTimeout(getTimeOfDay, 500);
 
 function getDayOfWeek(){
     const weekName = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     const monthName = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    var d = new Date();
-    var day = weekName[d.getDay()];
-    var month = monthName[d.getMonth()];
-    var date = d.getDate();
+    let d = new Date();
+    let day = weekName[d.getDay()];
+    let month = monthName[d.getMonth()];
+    let date = d.getDate();
 
 
     document.getElementById("dayInfo").innerHTML = day + " " + month + " " + date;
 }
 
 function getTimeOfDay(){
-    var d = new Date();
-    var hours = d.getHours();
-    var minutes = d.getMinutes();
-    var period = "AM";
+    let d = new Date();
+    let hours = d.getHours();
+    let minutes = d.getMinutes();
+    let period = "AM";
 
     if(hours > 12){
         hours = hours - 12;
@@ -27,9 +27,6 @@ function getTimeOfDay(){
         hours = 12;
     }
 
-    if(hours < 10){
-        hours = "0" + hours;
-    }
     if(minutes < 10){
         minutes = "0" + minutes;
     }
@@ -38,7 +35,7 @@ function getTimeOfDay(){
 }
 
 function validatePassword(){
-    var password = document.getElementById("passwordText");
+    const password = document.getElementById("passwordText");
     if(password.value == "Welcome1"){
         alert("Correct");
     }
@@ -53,7 +50,7 @@ function enterPressed(event){
     }
 }
 
-window.onload=function(){
+window.onload = () => {
     const pwdButton = document.getElementById("enterPwd");
     const pwdText = document.getElementById("passwordText");
     pwdButton.addEventListener("click", validatePassword);
