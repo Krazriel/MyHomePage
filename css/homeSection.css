@@ -1,0 +1,60 @@
+.homeSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 95vh;
+    color: white;
+}
+
+.insignia{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+}
+
+.summaryCaption{
+    font-size: 50px;
+}
+
+.summaryText{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 250px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 200px;
+    font-weight: bold;
+}
+
+.infoSection{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.degreeInfo, .degreeDate{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.eduCaption{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.educationInfo{
+    margin-bottom: 10px;
+}
+
+.degreeDate{
+    font-size: 13px;
+}
+
