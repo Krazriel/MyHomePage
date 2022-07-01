@@ -4,5 +4,25 @@
     justify-content: center;
     align-items: center;
     height: 95vh;
+    color: white;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.sampleProjectTitle{
+    font-size: 25px;
+}
+
+.sampleProjects{
+    width: 500px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projDesc{
+    font-size: 12px;
+    text-align: center;
 }
 
