@@ -34,7 +34,7 @@ function getTimeOfDay(){
     document.getElementById("clockInfo").innerHTML = hours + ":" + minutes + " " + period;
 }
 
-function validatePassword(){
+const validatePassword = () => {
     const password = document.getElementById("passwordText");
     if(password.value == "Welcome1"){
         window.location.assign('homepage.html');
@@ -44,7 +44,7 @@ function validatePassword(){
     }
 }
 
-function enterPressed(event){
+const enterPressed = (event) => {
     if (event.key === 'Enter') {
         validatePassword();
     }
